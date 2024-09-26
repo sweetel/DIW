@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup/Scaleup Registration Form</title>
+    <link rel="stylesheet" href="FormularioCSS.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>STARTUP/SCALEUP REGISTRATION FORM</h1>
+
+    <form action="/submit" method="post">
+        <!-- BASIC INFORMATION FIELDSET -->
+        <div class="fieldset-wrapper">
+            <fieldset class="fieldset1">
+                <legend class="legend1">BASIC INFORMATION</legend>
+                <div class="form-group">
+                    <label for="startup_name">Name of the Startup/Scaleup *</label>
+                    <input type="text" id="startup_name" name="startup_name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact1_name">Contact Person 1 *</label>
+                    <input type="text" id="contact1_name" name="contact1_name" placeholder="Name and second name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position1">Position *</label>
+                    <input type="text" id="position1" name="position1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email1">Email 1 *</label>
+                    <input type="email" id="email1" name="email1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone1">Phone *</label>
+                    <input type="tel" id="phone1" name="phone1" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact2_name">Contact Person 2 *</label>
+                    <input type="text" id="contact2_name" name="contact2_name" placeholder="Name and second name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position2">Position *</label>
+                    <input type="text" id="position2" name="position2" required>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- ADDITIONAL MEMBERS FIELDSET -->
+        <div class="fieldset-wrapper">
+            <fieldset class="fieldset2">
+                <legend class="legend2">ADDITIONAL MEMBERS</legend>
+                <div class="form-group">
+                    <label for="contact3_name">Contact Person 3</label>
+                    <input type="text" id="contact3_name" name="contact3_name" placeholder="Name and second name">
+                </div>
+
+                <div class="form-group">
+                    <label for="position3">Position 3</label>
+                    <input type="text" id="position3" name="position3">
+                </div>
+
+                <div class="form-group">
+                    <label for="email3">Email 3</label>
+                    <input type="email" id="email3" name="email3">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact4_name">Contact Person 4</label>
+                    <input type="text" id="contact4_name" name="contact4_name" placeholder="Name and second name">
+                </div>
+
+                <div class="form-group">
+                    <label for="position4">Position 4</label>
+                    <input type="text" id="position4" name="position4">
+                </div>
+
+                <div class="form-group">
+                    <label for="email4">Email 4</label>
+                    <input type="email" id="email4" name="email4">
+                </div>
+                <div class="form-group">
+                    <label for="email2">Email 2 *</label>
+                    <input type="email" id="email2" name="email2" required>
+                </div>
+            </fieldset>
+        </div>
+        
+        <h2>BAJA EL PARO...............................103-104</h2>
+
+        <!-- COMPANY INFORMATION FIELDSET -->
+        <div class="fieldset-wrapper">
+            <fieldset class="fieldset3">
+                <legend class="legend3">COMPANY INFORMATION</legend>
+                <div class="form-group">
+                    <label for="members">Number of company members:</label>
+                    <input type="number" id="members" name="members" min="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description of the Startup/Scaleup *</label>
+                    <textarea id="description" name="description" placeholder="Describe your startup in a tweet. Max 200 words." rows="4" maxlength="200" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="vertical1">Vertical 1 (Choose one option) *</label>
+                    <select id="vertical1" name="vertical1" required>
+                        <option value="">Select an option</option>
+                        <option value="technology">Technology</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="finance">Finance</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="technology1">Technology 1 (Choose one option) *</label>
+                    <select id="technology1" name="technology1" required>
+                        <option value="">Select an option</option>
+                        <option value="technology">Technology</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="finance">Finance</option>
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- STARTUP DATA FIELDSET -->
+        <div class="fieldset-wrapper">
+            <fieldset class="fieldset4">
+                <legend class="legend4">STARTUP DATA</legend>
+                <p>Note: The data will be made publicly available on the website and app.</p>
+
+                <div class="form-group">
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="country">Country *</label>
+                    <input type="text" id="country" name="country" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="website">Website *</label>
+                    <input type="url" id="website" name="website" placeholder="https://startupole.eu/" required>
+                </div>
+            </fieldset>
+        </div>
+        
+    </form>
+
+    <div class = "button-container">
+    <button type="submit">Submit</button>
+    <button id="date-time-button" type="button"></button>
+
+    <script>
+        function updateDateTimeButton() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', 
+                hour: '2-digit', minute: '2-digit', second: '2-digit' 
+            };
+            const dateTimeString = now.toLocaleDateString('es-ES', options);
+            document.getElementById('date-time-button').textContent = dateTimeString;
+        }
+
+        // Actualiza la fecha y hora al cargar la página
+        updateDateTimeButton();
+
+        // Actualiza la fecha y hora cada segundo
+        setInterval(updateDateTimeButton, 1000);
+    </script>
+    </div>
+</body>
+</html>

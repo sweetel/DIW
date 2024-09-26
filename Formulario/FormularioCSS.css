@@ -1,0 +1,185 @@
+body {
+    font-family: 'VT323', monospace; /* Aplica la fuente VT323 a toda la página */
+    background-color: #1f006e; /* Fondo de la página */
+}
+
+h1, legend, label {
+    font-family: 'VT323', monospace; /* Aplica la fuente VT323 a los encabezados, leyendas y etiquetas */   
+}
+
+h1 {
+    border: 1px solid black;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    text-align: center;
+    font-weight: bold;
+    background-color: #0004f1;
+    font-size: 60px;
+    color: #ffffff;
+}
+
+/* Ajustes para que el h2 no tenga márgenes */
+h2 {
+    grid-column: 1 / -1; /* Hace que el h2 ocupe ambas columnas en el grid */
+    text-align: center; /* Centra el texto */
+    font-size: 24px; /* Ajusta el tamaño de la fuente según sea necesario */
+    padding: 0; /* Elimina el espaciado interno */
+    margin: 0; /* Elimina el margen superior e inferior */
+    background-color: #ffffff; /* Fondo blanco para destacar el h2 */
+    border: 1px solid #ccc; /* Borde opcional */
+    border-radius: 10px; /* Bordes redondeados opcionales */
+}
+
+form {
+    max-width: 1200px; /* Ancho máximo más amplio para que los fieldsets quepan cómodamente */
+    margin: 0 auto; /* Centra el formulario en la página */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual ancho */
+    grid-gap: 20px; /* Espacio entre las columnas */
+}
+
+/* Ajustes para los fieldset para que se mantengan alineados */
+.fieldset-wrapper {
+    width: 100%;
+    margin: 0; /* Elimina el margen inferior entre fieldsets */
+}
+
+/* Asegúrate de mantener los estilos existentes para los fieldsets y legends */
+fieldset {
+    border: 1px solid #000000;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Colores para los fieldsets */
+.fieldset1 {
+    background-color: #e00000; /* Color para el fieldset de información básica */
+    color:#ffffff;
+}
+
+.fieldset2 {
+    background-color: #1cd40bdf; /* Color para el fieldset de miembros adicionales */
+    color:#1802c0;
+}
+
+.fieldset3 {
+    background-color: #fbec18; /* Color para el fieldset de información de la compañía */
+    color:#d40404;
+}
+
+.fieldset4 {
+    background-color: #3efffc; /* Color para el fieldset de datos de la startup */
+    color: #1802c0;
+}
+
+/* Leyendas dentro de los fieldsets */
+legend {
+    text-align: center; /* Centra el texto */
+    font-weight: bold; /* Mantiene el texto en negrita */
+    color: #2d08ff; /* Color del texto */
+    background-color: white; /* Fondo blanco para los legend */
+    margin: 0; /* Elimina margen alrededor del legend */
+    padding: 2px; /* Elimina padding interno */
+    border: 1px solid; /* Elimina el borde del legend */
+    border-radius: 3px;
+}
+
+.legend1 {
+    color:#1833fb;
+}
+
+.legend2 {
+    color:#fbec18;
+}
+
+.legend3 {
+    color:rgb(78, 44, 3);
+}
+
+.legend4 {
+    color:#d40404;
+}
+
+/* Ajustes para los inputs y los form-group */
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    flex: 2;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #030ee9;
+    width: 100%;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border: 2px solid #ffef08;
+    outline: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Añade un espacio entre los botones */
+    margin-top: 20px; /* Margen superior para separar los botones del contenido anterior */
+}
+
+button {
+    margin: 0 50px; /* Elimina el margen superior/inferior para los botones dentro del contenedor */
+    padding: 10px 60px; /* Ajusta el tamaño del padding según sea necesario */
+    border-radius: 10px;
+    border: none;
+    background-color: #2d08ff;
+    color: white;
+    cursor: pointer;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: darkgreen; /* Cambia el color al pasar el mouse */
+}
+
+.legend1:hover {
+    color: #ffef08;
+}
+
+.legend2:hover {
+    color: #e00000;
+}
+
+.legend3:hover {
+    color: #2d08ff;
+}
+
+.legend4:hover {
+    color: rgb(78, 44, 3);
+}
+
+#date-time-button {
+    padding: 10px 60px; /* Asegúrate de que ambos botones tengan el mismo tamaño */
+    border-radius: 10px;
+    border: none;
+    background-color: #2d08ff;
+    color: white;
+    font-family: 'VT323', monospace;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#date-time-button:hover {
+    background-color: darkgreen;
+}
