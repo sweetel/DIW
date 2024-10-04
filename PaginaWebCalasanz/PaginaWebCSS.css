@@ -1,0 +1,45 @@
+/* PaginaWebCSS.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center; /* Alinea verticalmente el logo y el formulario */
+    padding: 20px; /* Espaciado alrededor del header */
+    width: 100%; /* Asegura que el header ocupe todo el ancho */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+    background-color: #f0f0f0; /* Color de fondo opcional para visualizar el header */
+}
+
+.logo {
+    max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
+    margin-right: 20px; /* Espaciado entre el logo y el formulario */
+}
+
+.login-form {
+    display: flex; /* Mantiene el formulario en línea */
+    align-items: center; /* Alinea los inputs y el botón verticalmente */
+    flex: 1; /* Permite que el formulario ocupe el espacio disponible */
+}
+
+.login-form input {
+    margin-right: 10px; /* Espaciado entre los inputs y el botón */
+    padding: 10px; /* Espaciado interno */
+}
+
+.login-form button {
+    padding: 10px; /* Espaciado interno del botón */
+}
+
+.menu-form {
+    display: flex; /* Usar flexbox para los botones */
+    flex: 1; /* Permite que el menú ocupe el espacio restante */
+    justify-content: space-around; /* Espaciado uniforme entre los botones */
+}
+
+.button {
+    padding: 10px; /* Espaciado interno del botón */
+}
