@@ -4,63 +4,92 @@ body {
     padding: 0;
 }
 
+.top {
+    padding-left: 2%; /* Cambiado a porcentaje para ser responsive */
+}
+
 .header {
     display: flex;
-    align-items: center; /* Alinea la imagen y el contenedor del login verticalmente */
-    width: 100%; /* Asegura que el header ocupe todo el ancho */
-    box-sizing: border-box; /* Incluye el padding en el ancho total */
-    background-color: #f0f0f0; /* Color de fondo para visualizar el header */
-    padding: 20px; /* Espaciado alrededor del header */
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #1306c9;
+    padding: 20px;
 }
 
 .logo {
-    max-width: 100px; /* Ajusta el tamaño del logo según tus necesidades */
-    margin-right: 20px; /* Espaciado entre el logo y el contenedor del formulario */
+    max-width: 25%; /* Cambiado a porcentaje para ser responsive */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 2%; /* Cambiado a porcentaje */
 }
 
 .login-container {
-    flex: 1; /* Permite que el formulario ocupe el espacio disponible */
+    flex: 1;
 }
 
 .login-form {
-    display: flex; /* Mantiene el formulario en línea */
-    align-items: center; /* Alinea los inputs y el botón verticalmente */
-    width: 100%; /* Asegura que el formulario ocupe todo el ancho */
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
 .login-form input {
-    margin-right: 50px; /* Espaciado entre los inputs y el botón */
-    margin-left: 50px;
-    padding: 10px; /* Espaciado interno */
-    flex: 1; /* Permite que los inputs ocupen el espacio restante */
+    margin: 0 2%; /* Cambiado a porcentaje para ser responsive */
+    padding: 10px;
+    flex: 1;
 }
 
 .login-form button {
-    padding: 10px; /* Espaciado interno del botón */
+    padding: 10px;
 }
 
 .menu-container {
     display: flex;
-    justify-content: center; /* Centra el menú */
-    width: 100%; /* Asegura que el contenedor del menú ocupe todo el ancho */
-    margin-top: 1px; /* Espaciado entre el header y el menú */
+    justify-content: center;
+    width: 100%;
+    margin-top: 1px;
 }
 
 .menu-form {
-    display: flex; /* Usar flexbox para los botones */
-    justify-content: space-around; /* Espaciado uniforme entre los botones */
-    width: 100%; /* Asegura que el formulario del menú ocupe todo el ancho */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .button {
-    padding: 10px; /* Espaciado interno del botón */
+    padding: 10px;
     width: 100%;
     border: none;
 }
 
-.imagen-scroll {
+.noticias {
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 1px;
+    background-color: #1306c9;
 }
-.scroll-img {
-    width: 100%;
+
+/* Media queries para mejorar la responsividad */
+@media (max-width: 768px) {
+    .login-form {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: stretch; /* Alinea los elementos al ancho del contenedor */
+    }
+
+    .login-form input {
+        margin: 10px 0; /* Espaciado vertical */
+    }
+
+    .button {
+        width: auto; /* Ajusta el ancho del botón */
+    }
+
+    .menu-form {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .logo {
+        max-width: 50%; /* Aumenta el tamaño del logo en pantallas pequeñas */
+    }
 }
