@@ -18,9 +18,9 @@ body {
 }
 
 .logo {
-    max-width: 25%; /* Cambiado a porcentaje para ser responsive */
+    width: 100px; /* Ancho fijo */
     height: auto; /* Mantiene la proporción del logo */
-    margin-right: 2%; /* Cambiado a porcentaje */
+    margin-right: 2%;
 }
 
 .login-container {
@@ -30,18 +30,22 @@ body {
 .login-form {
     display: flex;
     align-items: center;
-    width: 100%;
+    width: 80%; /* Cambia el ancho según sea necesario */
+    margin: auto; /* Centra el formulario */
 }
 
 .login-form input {
-    margin: 0 2%; /* Cambiado a porcentaje para ser responsive */
-    padding: 10px;
-    flex: 1;
+    margin: 0 1%; /* Reduce el espaciado */
+    padding: 5px; /* Reduce el padding interno */
+    flex: 1; /* Permite que el input ocupe espacio disponible */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
 }
 
 .login-form button {
-    padding: 10px;
+    padding: 5px; /* Reduce el padding del botón */
+    font-size: 14px; /* Ajusta el tamaño de la fuente */
 }
+
 
 .menu-container {
     display: flex;
@@ -69,6 +73,10 @@ body {
     margin-top: 1px;
     background-color: #1306c9;
 }
+
+
+
+
 
 /* Media queries para mejorar la responsividad */
 @media (max-width: 768px) {
