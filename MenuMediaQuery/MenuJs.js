@@ -1,14 +1,20 @@
-const logo = document.getElementById('logo');
-const navbar = document.getElementById('navbar');
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcon = document.getElementById('menuIcon');
+    const navbar = document.getElementById('navbar');
 
-logo.addEventListener('mouseenter', () => {
-    if (window.innerWidth <= 600) {
-        navbar.style.display = 'block'; // Muestra el menú si la pantalla es pequeña
-    }
-});
+    menuIcon.addEventListener('mouseover', function() {
+        navbar.style.display = 'block'; // Muestra el menú al pasar el ratón
+    });
 
-navbar.addEventListener('mouseleave', () => {
-    if (window.innerWidth <= 600) {
-        navbar.style.display = 'none'; // Oculta el menú al salir del menú
-    }
+    menuIcon.addEventListener('mouseout', function() {
+        navbar.style.display = 'none'; // Oculta el menú al salir
+    });
+
+    navbar.addEventListener('mouseover', function() {
+        navbar.style.display = 'block'; // Mantiene el menú visible al pasar el ratón
+    });
+
+    navbar.addEventListener('mouseout', function() {
+        navbar.style.display = 'none'; // Oculta el menú al salir
+    });
 });

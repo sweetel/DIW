@@ -1,59 +1,59 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 .logo {
-    text-align: center;
-    padding: 10px 0; 
-    cursor: pointer; 
+    width: 150px; /* Ajusta el tamaño del logo */
+    margin: 20px; /* Espaciado alrededor del logo */
 }
 
-.logo img {
-    width: 150px; 
-    height: auto; 
+.menuIcon {
+    cursor: pointer; /* Cambiar el cursor al pasar por encima */
+    display: none; /* Ocultar por defecto */
 }
 
 nav {
-    background-color: #333;
+    display: block; /* Mostrar siempre por defecto */
+    width: 100%; /* Ocupar todo el ancho */
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
+    list-style-type: none; /* Quitar los estilos de lista */
     padding: 0;
-    width: 100%;
-    display: flex; /
+    text-align: center; /* Centrar el contenido */
 }
 
-nav ul li {
-    flex: 1; 
+nav li {
+    display: inline; /* Mostrar los elementos de la lista en línea */
+    margin: 0 20px; /* Espaciado entre los elementos */
 }
 
-nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-    transition: background-color 0.3s;
+nav a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente */
 }
 
-nav ul li a:hover {
-    background-color: #575757;
-}
-
-@media (max-width: 600px) {
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+    .menuIcon {
+        display: block; /* Mostrar el menuIcon en pantallas pequeñas */
+    }
+    
     nav {
-        display: none; 
+        display: none; /* Ocultar el nav por defecto */
+        position: fixed; /* Posicionarlo de forma fija */
+        top: 0;
+        left: 0;
+        width: 100%; /* Ocupar todo el ancho */
+        height: 100%; /* Ocupar toda la altura */
+        background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
     }
 
-    .logo:hover + nav {
-        display: block; 
-    }
-
-    nav ul {
-        flex-direction: column; 
+    nav.active {
+        display: block; /* Mostrar el nav cuando se activa */
     }
 }
