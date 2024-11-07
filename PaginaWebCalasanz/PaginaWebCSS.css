@@ -27,24 +27,23 @@ body {
     margin-right: 2%;
 }
 
-
 .login-form {
     display: flex;
-    width: auto; /* Ajustar al tamaño de los inputs */
+    width: auto;
     max-width: 100%; /* Para un tamaño máximo opcional */
-    margin-top:  15px;
+    margin-top: 15px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
     padding: 15px;
     border-radius: 8px;
 }
 
 .login-form input {
-    margin: 5px; /* Espaciado vertical entre los inputs */
+    margin: 5px;
     padding: 20px;
     font-size: 14px;
     border-radius: 5px;
     border: none;
-    flex: 1; /* Hace que el input ocupe el mismo espacio */
+    flex: 1;
 }
 
 .login-form button {
@@ -55,38 +54,44 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    flex: 1; /* Hace que el botón ocupe el mismo espacio */
-    margin-top: 10px; /* Espacio entre botones e inputs */
+    flex: 1;
+    margin-top: 10px;
 }
 
 .menu-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-form {
     display: flex;
-    justify-content: space-between; /* Espacio uniforme entre botones */
     width: 100%;
-    max-width: 400px;
+    margin: 0;
+    padding: 0;
 }
 
 .button {
-    padding: 10px;
+    flex: 1;
+    padding: 15px;
     background-color: #1709e0bb;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
     cursor: pointer;
-    flex: 1; /* Hace que el botón ocupe el mismo espacio */
-    margin: 0 5px; /* Espacio entre botones */
+    margin: 0;
+    transition: background-color 0.3s ease; /* Suaviza la transición */
+}
+
+/* Cambia el fondo a morado cuando el ratón pasa sobre el botón */
+.button:hover {
+    background-color: rgba(91, 5, 112, 0.932); /* Morado oscuro */
 }
 
 .noticias {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(106, 98, 216, 0.486); /* Fondo semitransparente */
+    background-color: rgba(106, 98, 216, 0.486);
     border-radius: 8px;
 }
 
@@ -94,6 +99,51 @@ body {
     margin-right: 15px;
 }
 
+/* Estilos para el footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(19, 6, 201, 0.7); /* Fondo azul semitransparente */
+    padding: 20px;
+    color: white;
+    text-align: left;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px; /* Ancho mínimo para cada columna */
+}
+
+.footer-column h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.footer-column p, .footer-column ul, .footer-column li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 5px;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+/* Responsive design para dispositivos móviles */
 @media (max-width: 768px) {
     .login-form {
         flex-direction: column;
@@ -101,10 +151,23 @@ body {
     }
 
     .menu-form {
-        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        flex-direction: column;
+    }
+
+    .button {
+        margin: 5px 0;
     }
 
     .logo {
         width: 70px;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-column {
+        margin: 10px 0;
     }
 }
