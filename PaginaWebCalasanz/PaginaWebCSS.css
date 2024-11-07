@@ -11,12 +11,12 @@ body {
 .top {
     padding: 10px;
     text-align: center;
-    background-color: rgba(19, 6, 201, 0.7); /* Fondo semitransparente para mejor lectura */
+    background-color: rgba(91, 5, 112, 0.932); /* Fondo semitransparente para mejor lectura */
 }
 
 .header {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     background-color: rgba(19, 6, 201, 0.7); /* Fondo semitransparente */
     padding: 20px;
 }
@@ -27,28 +27,24 @@ body {
     margin-right: 2%;
 }
 
-.login-container {
-    flex: 1;
-}
 
 .login-form {
     display: flex;
-    align-items: center;
-    width: 100%;
-    max-width: 300px;
-    margin: auto;
+    width: auto; /* Ajustar al tamaño de los inputs */
+    max-width: 100%; /* Para un tamaño máximo opcional */
+    margin-top:  15px;
     background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
     padding: 15px;
     border-radius: 8px;
 }
 
 .login-form input {
-    margin: 5px;
-    padding: 10px;
-    flex: 1;
+    margin: 5px; /* Espaciado vertical entre los inputs */
+    padding: 20px;
     font-size: 14px;
     border-radius: 5px;
     border: none;
+    flex: 1; /* Hace que el input ocupe el mismo espacio */
 }
 
 .login-form button {
@@ -59,6 +55,8 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    flex: 1; /* Hace que el botón ocupe el mismo espacio */
+    margin-top: 10px; /* Espacio entre botones e inputs */
 }
 
 .menu-container {
@@ -69,24 +67,26 @@ body {
 
 .menu-form {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Espacio uniforme entre botones */
     width: 100%;
     max-width: 400px;
 }
 
 .button {
     padding: 10px;
-    background-color: #1306c9;
+    background-color: #1709e0bb;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    flex: 1; /* Hace que el botón ocupe el mismo espacio */
+    margin: 0 5px; /* Espacio entre botones */
 }
 
 .noticias {
     margin: 20px;
     padding: 20px;
-    background-color: rgba(19, 6, 201, 0.7); /* Fondo semitransparente */
+    background-color: rgba(106, 98, 216, 0.486); /* Fondo semitransparente */
     border-radius: 8px;
 }
 
@@ -101,7 +101,7 @@ body {
     }
 
     .menu-form {
-        flex-direction: column;
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
     }
 
     .logo {
