@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripcion</title>
+    <link rel="stylesheet" href="PaginaFormularioCSS.css">
+</head>
+<body>
+    <div class="top-bar">
+        <p>Tel.: 923 26 79 61 | Pº Canalejas, 139-159 - 37001 - Salamanca</p>
+    </div>
+
+    <header class="header">
+        <img src="logocalasanzz.png" alt="Logo Calasanz" class="logo">
+        <h1 class="site-title">Calasanz Salamanca</h1>
+    </header>
+
+    <nav class="menu-container">
+        <form class="menu-form">
+            <button class="menu-button"><a href="PaginaWebHTML.html">Inicio</a></button>
+            <button class="menu-button"><a href="PaginaFormulario.html">Nuestro Centro</a></button>
+            <button class="menu-button">Etapas Educativas</button>
+            <button class="menu-button">Internado y Residencia</button>
+        </form>
+    </nav>
+
+    <section class="form-section">
+        <div class="card">
+            <h2>Formulario</h2>
+        </div>
+        <div class="form-container">
+            <h2>Formulario de Inscripcion</h2>
+            <form class="inscripcion-form">
+                <label for="nombre">Nombre y Apellidos del Alumno:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Introduce nombre y apellidos" required>
+
+                <label for="etapa">Etapa:</label>
+                <select id="etapa" name="etapa" required>
+                    <option value="">Elige una Etapa</option>
+                    <option value="primaria">Primaria</option>
+                    <option value="secundaria">Secundaria</option>
+                    <option value="fp">FP</option>
+                </select>
+
+                <label for="curso">Curso:</label>
+                <select id="curso" name="curso" required>
+                    <option value="">Elige un Curso</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+
+                <label for="internado">Internado:</label>
+                <select id="internado" name="internado" required>
+                    <option value="">Elige</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="residencia">Residencia Universitaria:</label>
+                <select id="residencia" name="residencia" required>
+                    <option value="">Elige</option>
+                    <option value="si">Si</option>
+                    <option value="no">No</option>
+                </select>
+
+                <label for="tutor">Padre/Madre/Tutor:</label>
+                <input type="text" id="tutor" name="tutor" placeholder="Nombre de la persona responsable" required>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Numero de telefono" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Correo electronico" required>
+
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Comentarios adicionales" rows="4"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3>Colegio Calasanz</h3>
+            <p>Fundado en 1956, el Colegio Calasanz pertenece a las Escuelas Pias, dedicadas a la formacion humana y cristiana de los ninos/as.</p>
+        </div>
+        <div class="footer-column">
+            <h3>Menu Principal</h3>
+            <ul>
+                <li>Nuestro Centro</li>
+                <li>Etapas Educativas</li>
+                <li>Internado</li>
+                <li>Actividades Extraescolares</li>
+                <li>Servicios</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Mas Informacion</h3>
+            <ul>
+                <li>Escuelas Pias</li>
+                <li>AMPA</li>
+                <li>Fundacion Itaka</li>
+                <li>Escolapios</li>
+                <li>Comenius</li>
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Contacto</h3>
+            <p>Colegio Calasanz de Salamanca</p>
+            <p>Pº Canalejas, 139-159, Salamanca</p>
+            <p>Tel: 923 26 79 61 | Fax: 923 27 04 54</p>
+            <p>Email: info@calasanzsalamanca.es</p>
+        </div>
+    </footer>
+</body>
+</html>

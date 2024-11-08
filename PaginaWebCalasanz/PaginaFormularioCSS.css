@@ -1,0 +1,236 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    background-image: url("belengotico.png");
+    color: #333;
+}
+
+.top-bar {
+    background-color: #a6a2a2;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #003366;
+    padding: 25px 0;
+    color: #fff;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.site-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+
+.login-container {
+    background-color: #004080;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.login-form input {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.login-form button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #ea7600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.login-form button:hover {
+    background-color: #005a99;
+}
+
+.menu-container {
+    display: flex;
+    width: 100%;
+    background-color: #004080;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-form {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-button {
+    flex: 1;
+    padding: 15px;
+    background-color: #004080;
+    color: #fff;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.menu-button a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #ea7600;
+}
+
+.menu-container, .menu-form {
+    flex-direction: row;
+}
+
+.menu-button + .menu-button {
+    margin-left: 10px;
+}
+
+.card {
+    padding: 8px;
+    margin-bottom: 20px;
+    background-color: #ea7500d4;
+    color: white;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.card h2 {
+    color: white;
+}
+
+.form-section {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.form-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input, form select, form textarea {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+form button {
+    padding: 10px;
+    font-size: 14px;
+    background-color: #ea7600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #005a99;
+}
+
+.footer {
+    background-color: #004080;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-column h3 {
+    border-bottom: 1px solid #555;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+@media (max-width: 768px) {
+    .header, .menu-container, .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .login-form, .menu-form {
+        flex-direction: column;
+    }
+
+    .menu-button {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .form-section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .footer-column {
+        width: 100%;
+        text-align: center;
+    }
+}
