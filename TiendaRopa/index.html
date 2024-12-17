@@ -9,15 +9,23 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
+  <nav class="menu-container">
+    <form class="menu-form">
+        <button class="menu-button">Inicio</a></button>
+        <button class="menu-button">Hombre</a></button>
+        <button class="menu-button">Mujer</button>
+        <button class="menu-button">Todos los productos</button>
+    </form>
+</nav>
+
   <div class="container my-4">
     <div class="d-flex justify-content-between align-items-center mb-4">
       <h1>Product Loader</h1>
     </div>
     <select class="form-select" aria-label="Default select example" id="filterCategories">
       <option selected>Open this select menu</option>
-      <option value="1">One</option>
-      <option value="2">Two</option>
-      <option value="3">Three</option>
+   
     </select>
     <div class="text-center mb-4">
       <button id="buttonLoadProducts" class="btn btn-primary">Load Products</button>
